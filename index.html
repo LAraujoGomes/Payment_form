@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de pagamento</title>
+</head>
+<body>
+    <div id="main">
+        <div id="userData">
+            <p>Name: Lucas Araujo Gomes</p>
+            <p>Email: something@mail.com</p>
+            <p>Cellphone: +551900000000</p>
+        </div>
+        <hr>
+        <form action="GET" id="form">
+            <div id="adress">
+                <label for="postalCode">Postal code:*</label>
+                <input type="text" name="postalCode" id="postalCode" required><br>
+
+                <label for="street">Street:*</label>
+                <input type="text" id="street" name="street" size="50"><br>
+                
+                <label for="number">Number:*</label>
+                <input type="text" name="number" id="number" size="10" required><br>
+
+                <label for="apartment">Apartment number (Optional):</label>
+                <input type="text" name="apartment" id="apartment" size="10"><br>
+
+                <label for="reference">Point of reference:(Optional) </label>
+                <input type="text" name="reference" id="reference" size="50"><br>
+            </div>
+            <hr>
+            <div id="payment">
+                <label for="pix">Pix</label>
+                <input type="radio" name="paymentMethod" id="pix"><br>
+
+                <label for="creditCard">Credit Card</label>
+                <input type="radio" name="paymentMethod" id="creditCard"><br>
+
+                <label for="paymentSlip">Payment Slip</label>
+                <input type="radio" name="paymentMethod" id="paymentSlip"><br>
+
+                <label for="coupon">Coupon: </label>
+                <input type="text" name="coupon" id="coupon">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
